@@ -14,7 +14,7 @@ body {
 @media (max-width: 930px) {
   .page .container { padding: 0; }
 }
-main { margin-bottom: 15px; }
+main { margin-bottom: 15px;}
 
 /* header and footer areas */
 .header {
@@ -190,3 +190,5 @@ tr:nth-child(even) { background: #eee }
   width: 50%;
   margin-left: 0;
 }
+
+.joke-container { margin:0 auto;}
