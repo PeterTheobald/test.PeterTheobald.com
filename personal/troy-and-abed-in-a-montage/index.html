@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>Peter Theobald</title>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+  </head>
+
+  <body class="page">
+    <nav class="header">
+      <div class="banner">
+<a href="/">
+
+<img src="/images/profile-100c.png" alt="Peter Theobald" />
+</a>
+<div class="banner-title">Peter Theobald</div><div class="banner-description">Software Engineer. Computer Forensics. Tech Entrepreneur. Geeky Dad. Maker. Rock Climber.</div>
+</div>
+
+      
+      <ul class="menu">
+        
+        
+        <li><a href="/"><span data-hover="Home">Home</span></a></li>
+        
+        <li><a href="/about/"><span data-hover="About">About</span></a></li>
+        
+        <li><a href="/categories/tech/"><span data-hover="Tech">Tech</span></a></li>
+        
+        <li><a href="/categories/personal/"><span data-hover="Personal">Personal</span></a></li>
+        
+        <li><a href="/tags/"><span data-hover="Tags">Tags</span></a></li>
+        
+      </ul>
+    </nav>
+
+<div class="container">
+<article>
+<div class="article-meta">
+
+  
+  
+  <h1><span class="title">Troy and Abed in a Montage</span></h1>
+  <span class="date">2017-03-14</span>
+
+  
+
+  
+  
+  <div class="categories">
+    
+    
+      <a href="/categories/personal">personal: </a>
+    
+    
+    
+    <a href="/tags/community">community</a>, <a href="/tags/videos">videos</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+
+<main>
+<p>To try out the free video editor &lsquo;HitFilm&rsquo; I made this montage of the fake show &lsquo;Troy and Abed in the Morning&rsquo; from the show Community.</p>
+
+<p></p>
+
+<p>First I found out which episodes have Troy and Abed clips. I found a website with Community scripts, downloaded the scripts and searched for related clips, like this:</p>
+
+<pre><code>wget -r -l1 http://www.springfieldspringfield.co.uk/episode_scripts.php?tv-show=community
+grep -l -i 'troy and abed' *
+grep -l -i 'troy and \w+ abed' *
+</code></pre>
+
+<p>This gave me a list of episodes with key phrases like &lsquo;Troy and Abed in the Morning&rsquo;, &lsquo;Evil Troy and Evil Abed&rsquo;, &lsquo;Troy and Abed in Stop Motion&rsquo;, &lsquo;Troy and Abed and Annie&rsquo;, etc&hellip; I already have all the Community episodes as a video source.</p>
+
+<p>I usually use Lightworks, but this time I used HitFilm to edit together the clips. I found HitFilm easier to use and more powerful as it has a full 2D and 3D compositor included in it, although Lightworks still wins for power-user keyboard shortcuts for trimming and rolling clips. Watch the result here:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/ZAXEbWoVdrg?"
+  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+</div>
+</main>
+
+
+
+
+
+<nav class="post-nav">
+  <span class="nav-prev"><a href="/personal/the-big-traverse/">&larr; The Big Traverse</a></span>
+  <span class="nav-next"><a href="/personal/climbing-amatitlan-guatemala/">Climbing Amatitlan Guatemala &rarr;</a></span>
+</nav>
+
+
+
+</article>
+</div>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+<footer>
+
+<div class="footer">
+  
+  
+  <div class="copyright">
+  &copy; 2017 Peter<span style="display:none">foo</span>@PeterTheobald.com |
+  <a href="https://twitter.com/peterjtheobald">@PeterJTheobald</a> |
+  <a href="https://github.com/petertheobald/">Github</a> |
+  <a href="http://www.petertheobald.com/index.xml">RSS</a>
+  </div>
+</div>
+</footer>
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+<script>
+hljs.configure({languages: []});
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+</body>
+</html>
+
