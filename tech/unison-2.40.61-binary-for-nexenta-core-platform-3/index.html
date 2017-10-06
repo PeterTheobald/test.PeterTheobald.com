@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>Peter Theobald</title>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+  </head>
+
+  <body class="page">
+    <nav class="header">
+      <div class="banner">
+<a href="/">
+
+<img src="/images/profile-100c.png" alt="Peter Theobald" />
+</a>
+<div class="banner-title">Peter Theobald</div><div class="banner-description">Software Engineer. Computer Forensics. Tech Entrepreneur. Geeky Dad. Maker. Rock Climber.</div>
+</div>
+
+      
+      <ul class="menu">
+        
+        
+        <li><a href="/"><span data-hover="Home">Home</span></a></li>
+        
+        <li><a href="/about/"><span data-hover="About">About</span></a></li>
+        
+        <li><a href="/categories/tech/"><span data-hover="Tech">Tech</span></a></li>
+        
+        <li><a href="/categories/personal/"><span data-hover="Personal">Personal</span></a></li>
+        
+        <li><a href="/tags/"><span data-hover="Tags">Tags</span></a></li>
+        
+      </ul>
+    </nav>
+
+<div class="container">
+<article>
+<div class="article-meta">
+
+  
+  
+  <h1><span class="title">Unison 2.40.61 binary for Nexenta Core Platform 3</span></h1>
+  <span class="date">2011-04-01</span>
+
+  
+
+  
+  
+  <div class="categories">
+    
+    
+      <a href="/categories/tech">tech: </a>
+    
+    
+    
+    <a href="/tags/unison">unison</a>, <a href="/tags/zfs">zfs</a>, <a href="/tags/solaris">solaris</a>, <a href="/tags/ocaml">ocaml</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+
+<main>
+<p>I have compiled a Unison 2.40.61 binary (file-syncronization tool) for Nexenta (Solaris/Linux hybrid OS with ZFS) and made it available for download here.
+</p>
+
+<p>Nexenta Core Platform 3 is a Solaris-like operating system that has an OpenSolaris (RIP) kernel and GNU/Linux user-land commands layered on top. This gives the user the best of both worlds: A kernel that runs the amazing ZFS filesystem, with the familiar Linux toolset.</p>
+
+<p>Unison is a file synchronization tool that is unmatched in it&rsquo;s safety and efficiency. It is optimized to run well over slow network links, using the rsync protocol to detect and send only the changed parts of files. It handles changes to files on both ends, including deletes making it a true two-way sync tool. In this way it has more in common with Dropbox than a backup tool. It is multi-platform, running on Linux, Windows, Macs, and Solaris.</p>
+
+<p>Using Unison to sync multiple computers to a central ZFS server makes a great combination. Add ZFS snapshots and RAIDZ or mirroring of the sync&rsquo;ed files makes it a great backup server as well.</p>
+
+<p>UNISON 2.40.61 ON NCP 3</p>
+
+<p>I am using Nexenta Core Platform 3, and I found that the apt repository has a very obsolete version of Unison (2.27.57). I have compiled Unison 2.40.61 for Nexenta Core 3.</p>
+
+<p>Nexenta has an OCaml interpreter, but does not have the OCaml native compiler. I had to compile it to interpreted byte-code. To install it, first install OCaml: &ldquo;apt-get install ocaml&rdquo;, then download the Unison binary from the link below and copy it to &ldquo;/usr/bin&rdquo;.</p>
+
+<p><a href="/downloads/unison-2.40.61-byte-code">Download the Unison 2.40.61 binary for Nexenta Core Platform 3 here</a></p>
+
+<p>This binary was compiled to interpreted byte-code, not native-code so although I have only tested it on Nexenta Core Platform 3, it may run on any platform that has an OCaml interpreter. If you try it on another platform please let me know and I will list it here.</p>
+</main>
+
+
+
+
+
+<nav class="post-nav">
+  <span class="nav-prev"><a href="/tech/upgrade-your-inspiron-8600-to-windows-7-with-this-nvidia-fx-go5200-video-driver/">&larr; Upgrade your Inspiron 8600 to Windows 7 with this NVidia FX Go5200 video driver</a></span>
+  <span class="nav-next"><a href="/tech/101-zfs-capable-operating-systems/">101 ZFS capable operating systems &rarr;</a></span>
+</nav>
+
+
+
+</article>
+</div>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+<footer>
+
+<div class="footer">
+  
+  
+  <div class="copyright">
+  &copy; 2017 Peter<span style="display:none">foo</span>@PeterTheobald.com |
+  <a href="https://twitter.com/peterjtheobald">@PeterJTheobald</a> |
+  <a href="https://github.com/petertheobald/">Github</a> |
+  <a href="http://www.petertheobald.com/index.xml">RSS</a>
+  </div>
+</div>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
+
